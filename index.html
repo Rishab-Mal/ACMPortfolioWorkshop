@@ -1,0 +1,80 @@
+<!-- For more info on HMTL, check out https://www.w3schools.com/html/ -->
+
+<!DOCTYPE html> <!-- declares to the browser that this is an HTML file -->
+<html lang="en">    <!-- sets website language to English -->
+  <head>    <!-- metadata of website -->
+    <meta charset="UTF-8" />    <!-- use standard characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!-- ensure proper scaling on different devices -->
+    <title>My Portfolio</title> <!-- TODO: change title of website -->
+    <link rel="stylesheet" href="style.css" />  <!-- link CSS file to HTML. Otherwise, styles won't load -->
+  </head>
+  <body>    <!-- viewable content of website-->
+    <header>
+      <!-- init "greeting" span to allow JS dynamic content -->
+      <h1><span id="greeting"></span> I'm Sanjeev!</h1> <!-- TODO: change name -->
+      <p>Welcome to my Website</p>
+      <img src="assets/profile.jpg" alt="Profile Picture" width="200" />    <!-- TODO: replace profile.jpg -->
+    </header>
+
+    <!-- TODO: fill in About Me section -->
+    <section id="about">
+      <h2>About Me</h2> <!-- header of section -->
+      <p>   <!-- content of section (p = paragraph) -->
+        I'm a senior computer science student at the University of Florida. I
+        love building websites!
+      </p>
+    </section>
+
+    <!-- TODO: fill in Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        Here are some of the projects I have worked on, demonstrating my skills
+        in web development and programming.
+      </p>
+      <div class="project-cards">   <!-- container for project cards -->
+        <div class="project-card">  <!-- container for each individual project -->
+          <h3>Project 1</h3>        <!-- project title -->
+          <p>                       <!-- project description -->
+            A web application that helps users manage their tasks efficiently.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>
+            A web application that helps users manage their tasks efficiently.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>
+            A web application that helps users manage their tasks efficiently.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: fill in Experience section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        I have gained experience through internships and coursework, working
+        with various technologies and teams.
+      </p>
+    </section>
+
+    <!-- TODO: fill in links to Linkedin and GitHub -->
+    <footer>    <!-- footer section: always at the bottom of page-->
+      <h2>Contact Me!</h2>
+      <a href="https://www.linkedin.com" target="_blank" class="contact-btn"
+        >LinkedIn</a
+      >
+      <a href="https://github.com" target="_blank" class="contact-btn"
+        >GitHub</a
+      >
+    </footer>
+
+    <!-- link the JS file to the HTML -->
+    <script src="script.js"></script>
+  </body>
+</html>
